@@ -1,0 +1,54 @@
+{
+  "name": "vandco",
+  "version": "0.0.1",
+  "description": "Webpack vandco with SCSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "keywords": [
+    "scss",
+    "html",
+    "jss"
+  ],
+  "author": "vadivel",
+  "license": "GPL-2.0",
+  "config": {
+    "title": "Webpack Compile",
+    "hostname": "localhost/wp-vandco",
+    "build": "dist",
+    "images": "src/images",
+    "styles": "src/styles"
+  },
+  "devDependencies": {
+    "@wordpress/stylelint-config": "^22.1.0",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^6.11.0",
+    "jquery": "^3.7.1",
+    "mini-css-extract-plugin": "^2.9.0",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.38",
+    "postcss-inline-svg": "^5.0.0",
+    "postcss-loader": "^7.3.4",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^7.8.3",
+    "postcss-pxtorem": "^6.1.0",
+    "postcss-scss": "^4.0.9",
+    "postcss-sort-media-queries": "^5.2.0",
+    "postcss-unique-selectors": "^5.1.1",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
+    "stylelint-order": "^6.0.4",
+    "stylelint-webpack-plugin": "^5.0.1",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@wordpress/hooks": "^4.2.0",
+    "animejs": "^3.2.2",
+    "css-select": "^5.1.0"
+  }
+}

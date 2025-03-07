@@ -1,0 +1,127 @@
+
+.wp-block-post-template {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 25px;
+	column-gap: 15px;
+	justify-content: space-between;
+
+	li {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.08);
+		border: none;
+		border-bottom: 4px solid var(--wp--preset--color--dark-blue);
+		border-radius: 10px;
+		overflow: hidden;
+		padding: 0 20px 20px;
+		transform: translateY(0);
+		transition: 0.2s ease-in-out;
+		width: 100%;
+		margin-top: 0;
+
+		@include respond-to(small) {
+			width: calc(50% - 7.5px);
+		}
+
+		@include respond-to(navigation) {
+			width: 23%;
+		}
+
+		&:hover {
+			transform: translateY(-6px);
+			box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+		}
+
+		.wp-block-post-featured-image {
+			margin: 0 -20px;
+
+			img {
+				aspect-ratio: 16 / 10;
+				height: auto;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
+		}
+
+		&.team {
+
+			.wp-block-post-featured-image img {
+				aspect-ratio: 16 /12;
+				object-position: top;
+			}
+
+			.wp-block-post-title {
+				margin-bottom: 0;
+				margin-top: 20px;
+			}
+
+			.wp-block-post-terms {
+				margin-bottom: 10px;
+			}
+
+
+		}
+
+		.wp-block-post-date {
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
+
+		.wp-block-post-title {
+			font-size: 32px;
+			font-weight: 600;
+
+			a {
+				font-size: 32px;
+				font-weight: 600;
+
+				&::after {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					content: "";
+				}
+			}
+		}
+
+		.wp-block-post-excerpt {
+			margin-top: 0;
+		}
+
+		/* stylelint-disable */
+		.wp-block-post-excerpt__more-link {
+			position: relative;
+
+			&::after {
+				position: relative;
+				top: 2px;
+				right: -5px;
+				display: inline-block;
+				width: 13px;
+				height: 13px;
+				transform: rotate(-90deg);
+				background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' fill='%23FFCB00'%3E%3Cpath d='M13 1.5L11.5 0l-5 4.9-5-4.9L0 1.5 6.5 8z'/%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+				background-size: 13px;
+				content: "";
+				transition: 0.2s ease-in-out;
+			}
+
+			&:hover::after {
+				right: -9px;
+				transition: 0.2s ease-in-out;
+			}
+		}
+		/* stylelint-enable */
+
+	}
+}
+

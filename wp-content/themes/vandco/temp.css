@@ -1,0 +1,11 @@
+#wpfBlock_2 .wpfFilterTitle{
+width:65px !important;}
+
+.la-spinner, .wpfIconPreview .spinner, .wpfLoaderIconTemplate .spinner, .woobewoo-filter-loader.spinner {
+background: url('src/images/vandco-logo-3.svg') !important; background-size:cover !important;}
+
+.cookcodesmenu_nav .currency .dd-select {background:none !important;}
+
+.cart-count {
+	position: relative;
+}

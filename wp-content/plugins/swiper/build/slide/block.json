@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "custom/swiper--slide",
+  "parent": [
+    "custom/swiper"
+  ],
+  "version": "0.1.0",
+  "title": "Slide",
+  "category": "widgets",
+  "icon": "slides",
+  "description": "Individual Slide in Custom Swiper Block",
+  "supports": {
+    "html": false,
+    "color": {
+      "text": false,
+      "background": true,
+      "gradients": true
+    },
+    "spacing": {
+      "padding": true
+    }
+  },
+  "textdomain": "custom",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

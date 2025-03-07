@@ -1,0 +1,15 @@
+{
+  "name": "acf/video-popup",
+  "title": "Video Popup Block",
+  "description": "A custom block with video popup",
+  "script": "block-video-popup",
+  "style": [ "file:../css/block-video-popup.min.css" ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["text", "image", "block", "video", "popup"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "video-popup.php"
+  },
+  "align": "full"
+}

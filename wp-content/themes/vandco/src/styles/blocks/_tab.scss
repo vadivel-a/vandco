@@ -1,0 +1,54 @@
+//mixins
+@mixin transition-mix ($property: all, $duration: 0.2s, $timing: linear, $delay: 0s) {
+	transition-property: $property;
+	transition-duration: $duration;
+	transition-timing-function: $timing;
+	transition-delay: $delay;
+}
+
+@mixin position-absolute ($top: null, $left: null, $right: null, $bottom: null) {
+	position: absolute;
+	top: $top;
+	left: $left;
+	right: $right;
+	bottom: $bottom;
+}
+
+.tabs {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+.tab-nav {
+	position: relative;
+}
+
+.tabs__nav-decoration {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	transition:
+		width 0.2s linear 0s,
+		transform 0.2s ease-out 0s;
+
+	border-radius: 3px;
+	z-index: 1;
+}
+
+.tab-panel {
+
+	> .wp-block-group {
+		display: none;
+		transition: none;
+		transform: scale(0.8);
+
+		&.active {
+			transition: all 0.25s linear 0s;
+			transform: scale(1);
+			display: block;
+		}
+	}
+}

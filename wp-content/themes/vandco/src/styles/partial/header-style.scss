@@ -1,0 +1,11 @@
+.is-style-display {
+	font-size: var(--wp--preset--font-size--xxx-large);
+	font-weight: var(--wp--custom--font-weights--bold);
+	line-height: 1;
+}
+
+.is-style-heading-h1 {
+	font-size: clamp(1.875rem, 0.536rem + 3.571vw, 3.75rem);
+	font-weight: var(--wp--custom--font-weights--bold);
+	line-height: 1.1;
+}

@@ -1,0 +1,269 @@
+/*todo*/
+
+.cookcodesmenu_nav .current_page_item,
+.cookcodesmenu_nav .current_page_parent,
+.cookcodesmenu_nav li:hover {
+	background: #eae9e9;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.cookcodesmenu_nav .current_page_item a,
+.cookcodesmenu_nav .current_page_parent a,
+.cookcodesmenu_nav li:hover a {
+	color: #000;
+}
+
+.cookcodesmenu_brand img {
+	width: 57px;
+	vertical-align: middle;
+}
+
+.cookcodesmenu_menu {
+	background: #fff;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+	padding: 0.5% 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.search-toggle {
+		padding: 20px;
+		font-size: 20px;
+		color: var(--wp--preset--color--dark-blue);
+	}
+}
+
+.cookcodesmenu_nav {
+	background: #fff;
+	width: 100%;
+}
+
+.cookcodesmenu_menu .cookcodesmenu_icon-bar {
+	background-color: #011a6d;
+}
+
+.cookcodesmenu_btn {
+	cursor: pointer;
+	display: block;
+	line-height: 20px;
+	padding-left: 20px;
+}
+
+.cookcodesmenu_btn .cookcodesmenu_icon-bar + .cookcodesmenu_icon-bar {
+	margin-top: 0.188em;
+}
+
+.cookcodesmenu_menu {
+	*zoom: 1;
+
+	&::before {
+		display: none;
+	}
+}
+
+.cookcodesmenu_menu .cookcodesmenu_menutxt {
+	display: block;
+	float: left;
+	line-height: 20px;
+}
+
+.cookcodesmenu_menu .cookcodesmenu_icon {
+	float: left;
+	height: auto;
+	margin: 0.188em 0 0 0.438em;
+	width: 30px;
+}
+
+.cookcodesmenu_menu .cookcodesmenu_icon::before {
+	background: transparent;
+	content: "";
+	display: block;
+	height: auto;
+	position: absolute;
+	width: 30px;
+}
+
+.cookcodesmenu_menu .cookcodesmenu_no-text {
+	margin: 0;
+}
+
+.cookcodesmenu_menu .cookcodesmenu_icon-bar {
+	border-radius: 1px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	display: block;
+	height: 3px;
+	margin-bottom: 4px;
+	width: 30px;
+}
+
+.cookcodesmenu_nav {
+	clear: both;
+}
+
+.cookcodesmenu_nav li,
+.cookcodesmenu_nav ul {
+	display: block;
+}
+
+.cookcodesmenu_nav .cookcodesmenu_arrow {
+	border-left: 1px solid hsla(0, 0%, 100%, 0.1);
+	float: right;
+	font-size: 0.8em;
+	font-size: 15px;
+	margin: 0 0 0 0.4em;
+	padding-left: 15px;
+}
+
+.cookcodesmenu_nav .cookcodesmenu_item {
+	cursor: pointer;
+}
+
+.cookcodesmenu_nav .cookcodesmenu_item a {
+	display: inline;
+}
+
+.cookcodesmenu_nav .cookcodesmenu_row,
+.cookcodesmenu_nav a {
+	display: block;
+}
+
+.cookcodesmenu_nav .cookcodesmenu_parent-link a {
+	display: inline;
+}
+
+.menuHidden {
+	display: none !important;
+}
+
+.cookcodesmenu_menu {
+	font-size: 16px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+.cookcodesmenu_menu,
+.cookcodesmenu_menu * {
+	box-sizing: border-box;
+}
+
+.cookcodesmenu_menu .cookcodesmenu_menutxt {
+	color: #fff;
+	font-weight: 700;
+}
+
+.cookcodesmenu_btn {
+	background-color: hsla(0, 0%, 100%, 0);
+	border-radius: 4px;
+	margin: 7px 5px 6px;
+	text-decoration: none;
+}
+
+.cookcodesmenu_nav {
+	border-bottom: 2px solid #282929;
+	color: #fff;
+	font-size: 16px;
+	list-style: none;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.cookcodesmenu_nav li {
+	border-bottom: 1px solid rgba(8, 8, 8, 0.1);
+	line-height: 40px;
+	position: relative;
+
+	.menu-icon img {
+		width: 20px;
+		vertical-align: sub;
+	}
+}
+
+.cookcodesmenu_nav li a {
+	padding: 10px 15px;
+}
+
+.cookcodesmenu_nav ul li::before {
+	color: #000;
+	content: "\f182";
+	font: 400 normal normal 11px/1 FontAwesome;
+	font-weight: 900;
+	height: 10px;
+	left: 24px;
+	position: absolute;
+	top: 14px;
+	width: 10px;
+	z-index: 1;
+}
+
+.cookcodesmenu_nav ul ul li::before {
+	left: 44px;
+}
+
+.cookcodesmenu_nav ul {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.cookcodesmenu_nav ul li a {
+	padding-left: 45px;
+}
+
+.cookcodesmenu_nav ul li ul li a {
+	padding-left: 70px;
+}
+
+.cookcodesmenu_nav .cookcodesmenu_row:hover {
+	background: none;
+	border-radius: 6px;
+}
+
+.cookcodesmenu_nav a {
+	color: #000;
+	text-decoration: none;
+}
+
+.cookcodesmenu_nav a:focus,
+.cookcodesmenu_nav a:hover {
+	text-decoration: none;
+}
+
+.cookcodesmenu_nav .cookcodesmenu_txtnode {
+	margin-left: 15px;
+}
+
+.cookcodesmenu_nav .cookcodesmenu_item a,
+.cookcodesmenu_nav .cookcodesmenu_parent-link a {
+	margin: 0;
+	padding: 0;
+}
+
+.cookcodesmenu_brand {
+	color: #fff;
+	font-size: 18px;
+	height: 57px;
+	padding: 0 12px;
+	text-align: center;
+}
+
+.cookcodesmenu-rightcontent {
+	padding-right: 20px;
+	width: 100%;
+
+	.dd-select {
+		padding-right: 15px;
+		background: none !important;
+		border: none;
+	}
+}
+
+.cookcodesmenu_nav li.mob-hide {
+	display: none;
+}
+

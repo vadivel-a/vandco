@@ -1,0 +1,15 @@
+{
+  "name": "acf/testimonial",
+  "title": "Testimonial Block",
+  "description": "A custom block with customer testimonial",
+  "script": "block-customer-testimonial",
+  "style": [ "file:../css/block-customer-testimonial.min.css" ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["text", "image", "block", "review", "comment"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "testimonial.php"
+  },
+  "align": "full"
+}

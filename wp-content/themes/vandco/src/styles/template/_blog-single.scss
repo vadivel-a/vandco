@@ -1,0 +1,77 @@
+.single-post {
+
+	.single-block-content {
+		max-width: var(--wp--style--global--wide-size);
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 3rem;
+	}
+
+	.single-detail-banner {
+
+		.detail-banner-columns {
+			display: grid;
+			grid-template-columns: 50% 50%;
+			background: var(--wp--preset--color--white);
+			box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.08);
+			border: none;
+			margin: 0 auto;
+
+			@include respond-to($medium, max) {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		.detail-banner-column {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+		}
+
+		.detail-banner-content {
+			padding: 2.5rem clamp(2.5rem, 0.357rem + 5.714vw, 5.5rem);
+
+			.wp-block-heading {
+				margin-top: 0;
+			}
+		}
+
+		.wp-block-image {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+
+			img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+		}
+	}
+
+	.vandco-breadcrumbs {
+		margin: 2rem 0;
+
+		.breadcrumb_home {
+			color: var(--wp--preset--color--primary-light);
+			font-weight: var(--wp--custom--font-weights--bold);
+		}
+
+		.breadcrumb_last {
+			font-weight: var(--wp--custom--font-weights--bold);
+		}
+	}
+
+	.referfriend-section {
+		margin-top: clamp(2.5rem, 1.161rem + 3.571vw, 4.375rem);
+		margin-bottom: 20px;
+
+		.full-width-button {
+			margin-bottom: 0;
+		}
+	}
+
+}

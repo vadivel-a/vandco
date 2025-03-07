@@ -1,0 +1,15 @@
+{
+  "name": "acf/featured-slider",
+  "title": "Featured Slider Block",
+  "description": "A custom block with featured slider",
+  "script": "block-featured-slider",
+  "style": [ "file:../css/block-featured-slider.min.css" ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["text", "image", "block", "featured", "slider"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "featured-slider.php"
+  },
+  "align": "full"
+}

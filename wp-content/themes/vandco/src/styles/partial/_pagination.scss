@@ -1,0 +1,114 @@
+$button-radius: 50%;
+$font-size: 16px;
+$padding-x: 20px;
+$padding-y: 12px;
+$margin-x: 10px;
+$button-width: 30px; // Width of the button
+$button-height: 30px; // Height of the button
+
+// Mixins
+@mixin transition($properties, $duration) {
+	transition: $properties $duration;
+}
+
+// Base pagination styles
+.wp-block-query {
+
+	.wp-block-query-pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+		gap: 5px;
+
+		a {
+			margin: 0 $margin-x;
+			background-color: var(--wp--preset--color--dark-gray);
+			color: #fff;
+			text-decoration: none;
+			border-radius: $button-radius;
+			font-size: $font-size;
+			font-weight: 700;
+			text-align: center;
+
+			// Set width and height
+			width: $button-width;
+			height: $button-height;
+
+			// Center text inside the button
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@include transition(all, 0.3s);
+
+			&:hover {
+				background-color: var(--wp--preset--color--dark-blue);
+				transform: translateY(-3px);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+				color: #fff;
+			}
+
+			.current {
+				background-color: var(--wp--preset--color--dark-blue);
+				transform: translateY(1px);
+				box-shadow: none;
+				color: #fff;
+			}
+
+			span {
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+		.current {
+			background-color: var(--wp--preset--color--dark-blue);
+			transform: translateY(1px);
+			box-shadow: none;
+			color: #fff;
+			border-radius: $button-radius;
+			width: $button-width;
+			height: $button-height;
+			text-align: center;
+		}
+
+		.wp-block-query-pagination-previous,
+		.wp-block-query-pagination-next {
+			font-size: $font-size + 2px;
+			font-weight: 400;
+			background: none;
+			color: #000;
+			margin: 0;
+		}
+
+		.wp-block-query-pagination-numbers {
+			display: flex;
+		}
+
+		.previous:hover,
+		.next:hover {
+			background-color: var(--wp--preset--color--contrast);
+			color: #fff;
+		}
+	}
+}
+
+// Add media queries for responsiveness
+@media screen and (max-width: 768px) {
+
+	.wp-block-query {
+
+		.wp-block-query-pagination {
+
+			a {
+				padding: 10px 15px;
+				font-size: 14px;
+
+				// Adjust width and height for smaller screens
+				width: 50px;
+				height: 50px;
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+/*   Core Typography
+--------------------------------------------------------------------------  */
+body {
+	overflow-x: hidden;
+}
+
+a {
+	color: color(link);
+	transition: text-decoration-color 0.2s ease-in-out;
+	text-decoration: none !important;
+
+	&:not(:hover) {
+		text-decoration-color: color(link-hover);
+	}
+
+	&:hover {
+		color: var(--wp--preset--color--primary-light);
+	}
+
+	&[href="#"] {
+		cursor: default;
+	}
+}
+
+.main {
+	padding-inline: var(--wp--custom--gutter-width--page);
+
+	> :where(*) {
+		margin-inline: auto;
+		max-width: var(--wp--style--global--wide-size);
+	}
+
+	> *:first-child:not(.no-auto-header-padding) {
+		padding-top: var(--header-height);
+	}
+
+	@include respond-to(navigation) {
+		min-height: 500px;
+	}
+}
+
+.alignwide {
+	max-width: var(--wp--style--global--wide-size);
+}
+
+.alignfull {
+	max-width: none;
+	margin-inline: calc(-1 * var(--wp--custom--gutter-width--page));
+}
+
+.has-box-shadow {
+	box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.08);
+	border: none;
+	border-bottom: 4px solid var(--wp--preset--color--dark-blue);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+@include respond-to(medium, max) {
+
+	.mob-padding-inline {
+		padding-inline: 20px;
+	}
+}

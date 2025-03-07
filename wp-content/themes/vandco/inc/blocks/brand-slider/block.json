@@ -1,0 +1,15 @@
+{
+  "name": "acf/brand-slider",
+  "title": "Brand Slider Block",
+  "description": "A custom block with brand slider",
+  "script": "block-brand-slider",
+  "style": [ "file:../css/block-brand-slider.min.css" ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["text", "image", "block", "brand", "slider"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "brand-slider.php"
+  },
+  "align": "full"
+}

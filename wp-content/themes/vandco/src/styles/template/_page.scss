@@ -1,0 +1,34 @@
+.hero {
+
+	video {
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 87vh;
+		object-fit: cover;
+		z-index: -1;
+	}
+
+	.hero-banner {
+		position: absolute;
+		top: 40%;
+		width: 100%;
+	}
+}
+
+.is-image .wp-block-heading,
+.is-image-20 .wp-block-heading {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.is-image .wp-block-heading img {
+	width: 50px !important;
+}
+
+.no-results,
+.not-found {
+	padding: 30px;
+}
